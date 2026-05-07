@@ -4,25 +4,10 @@
 
 / {
     chosen {
-        // zmk,physical-layout = &foostan_corne_6col_layout;
-        zmk,physical-layout = &foostan_corne_5col_layout;
+        zmk,physical-layout = &foostan_corne_6col_layout;
+        // zmk,physical-layout = &foostan_corne_5col_layout;
     };
 };
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-
-        Tab {
-            bindings = <&kp TAB>;
-            key-positions = <41 39>;
-        };
-
-        Caps {
-            bindings = <&kp CAPS>;
-            key-positions = <41 38>;
-        };
-    };
 
 / {
     keymap {
@@ -36,9 +21,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
             bindings = <
-&none &kp Q &kp D &kp R &kp W &kp B   &kp Y &kp U  &kp I     &kp O   &kp P    &none 
-&none &kp A &kp S &kp H &kp T &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &none 
-&none &kp Z &kp X &kp M &kp C &kp V   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none 
+&kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+&kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+&kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
             >;
         };
