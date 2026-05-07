@@ -38,40 +38,40 @@
         default_layer {
             label = "WORKMAN";
             bindings = <
-&kp TAB    &kp Q  &kp D  &kp R           &kp W  &kp B        &kp J      &kp F      &kp U       &kp P       &kp SEMICOLON  &kp BKSP
-&kp LALT   &kp A  &kp S  &kp H           &kp T  &kp G        &kp Y      &kp N      &kp E       &kp O       &kp I          &kp ENTER
-&kp LSHFT  &kp Z  &kp X  &kp M           &kp C  &kp V        &kp K      &kp L      &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSFT
-                         &kp LEFT_SHIFT  &to 1  &kp ENTER    &kp SPACE  &kp LCTRL  &kp ESCAPE
+&none  &kp Q  &kp D  &kp R           &kp W  &kp B        &kp J      &kp F      &kp U       &kp P       &kp SEMICOLON  &none
+&none  &kp A  &kp S  &kp H           &kp T  &kp G        &kp Y      &kp N      &kp E       &kp O       &kp I          &none
+&none  &kp Z  &kp X  &kp M           &kp C  &kp V        &kp K      &kp L      &kp COMMA   &kp PERIOD  &kp SLASH      &none
+                     &kp LEFT_SHIFT  &to 1  &kp ENTER    &kp SPACE  &kp LCTRL  &kp ESCAPE
             >;
         };
 
         numrow_layer {
             label = "NUMROW";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3     &kp N4     &kp N5       &kp N6    &kp N7    &kp N8   &kp N9     &kp N0    &kp DEL
-&kp GRAVE  &none   &none   &kp PSCRN  &kp MINUS  &kp EQUAL    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp SEMI  &none
-&none      &none   &none   &kp BSLH   &kp LBKT   &kp RBKT     &none     &none     &none    &none      &none     &none
-                           &mo 4      &to 2      &mo 1        &kp SPC   &mo 4     &kp F13
+&none  &kp N1  &kp N2  &kp N3     &kp N4     &kp N5       &kp N6    &kp N7    &kp N8   &kp N9     &kp N0    &none
+&none  &none   &none   &kp PSCRN  &kp MINUS  &kp EQUAL    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp SEMI  &none
+&none  &none   &none   &kp BSLH   &kp LBKT   &kp RBKT     &none     &none     &none    &none      &none     &none
+                       &mo 4      &to 2      &mo 1        &kp SPC   &mo 4     &kp F13
             >;
         };
 
         numpad_layer {
             label = "NUMPAD";
             bindings = <
-&kp TAB      &none  &none  &none  &none  &none    &kp KP_EQUAL     &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &kp BSPC
-&kp KP_NLCK  &none  &none  &none  &none  &none    &kp KP_ASTERISK  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_PLUS   &none
-&tog 3       &none  &none  &none  &none  &none    &kp KP_SLASH     &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_ENTER  &none
-                           &mo 4  &to 3  &mo 1    &kp SPC          &kp KP_N0  &kp KP_DOT
+&none  &none  &none  &none  &none  &none            &kp KP_EQUAL     &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &none
+&none  &none  &none  &none  &none  &none            &kp KP_ASTERISK  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_PLUS   &none
+&none  &none  &none  &none  &none  &none            &kp KP_SLASH     &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_ENTER  &none
+                     &mo 4  &to 3  &kp BACKSPACE    &kp SPC          &kp KP_N0  &kp KP_DOT
             >;
         };
 
         adjust_layer {
             label = "ADJUST";
             bindings = <
-&kp F1    &kp F2   &kp F3    &kp F4     &kp F5  &kp F6    &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
-&kp CAPS  &kp INS  &kp HOME  &kp PG_UP  &none   &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none    &none
-&tog 3    &kp DEL  &kp END   &kp PG_DN  &none   &none     &msc SCRL_UP    &msc SCRL_DOWN  &none         &none            &none    &none
-                             &kp LGUI   &to 4   &none     &mkp LCLK       &mkp MCLK       &mkp RCLK
+&none  &kp F1   &kp F2    &kp F3     &kp F4   &kp F5     &kp F6          &kp F7          &kp F8        &kp F9           &kp F10  &none
+&none  &kp INS  &kp HOME  &kp PG_UP  &kp F11  &kp F12    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none    &none
+&none  &kp DEL  &kp END   &kp PG_DN  &none    &none      &msc SCRL_UP    &msc SCRL_DOWN  &none         &none            &none    &none
+                          &kp LGUI   &to 4    &none      &mkp LCLK       &mkp MCLK       &mkp RCLK
             >;
         };
 
