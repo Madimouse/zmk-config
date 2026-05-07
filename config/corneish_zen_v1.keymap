@@ -10,6 +10,21 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <41 39>;
+        };
+
+        Caps {
+            bindings = <&kp CAPS>;
+            key-positions = <41 38>;
+        };
+    };
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
