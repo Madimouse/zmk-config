@@ -10,12 +10,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define QWERTY 0
-#define GAMING 1
+#define WORKMAN 0
+#define NUMROW 1
 #define NUMPAD 2
-#define NUMROW 3
-#define ADJUST 4
-#define CONFIG 5
+#define ADJUST 3
+#define CONFIG 4
 
 / {
     combos {
